@@ -1,0 +1,38 @@
+@import "_variables.scss";
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.addGameContainer {
+  display: flex;
+  justify-content: center;
+
+  input {
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 26px;
+    border: 2px solid $green;
+  }
+
+  button {
+    @extend %button;
+    border-color: $green;
+    color: $green;
+
+    &:hover {
+      background-color: $green;
+      color: $white;
+    }
+  }
+}
